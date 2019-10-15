@@ -16,3 +16,7 @@ a:hover{
     color:#013DBF;
     background-color:gray;
 }
+tr:hover{
+    color:rgb(4, 4, 5);
+    background-color:rgb(118, 122, 104);
+}
