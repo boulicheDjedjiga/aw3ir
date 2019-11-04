@@ -1,4 +1,5 @@
 function validation ( )
+
 {
     document.getElementById("resultat").setAttribute("hidden",'hidden');
     document.getElementById("error").setAttribute("hidden",'hidden');
