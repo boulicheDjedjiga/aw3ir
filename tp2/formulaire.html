@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="script.js"></script>
+            <link href="form.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>TP2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <style>
+          body{
+              background-color: #c2bdbd;              
+              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+              font-size: 16px;
+              margin: 0 auto;
+              max-width: 800px;              
+          }
+        </style>
+        
+        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+        <!--<link rel="stylesheet" href="style.css">-->
+        <!--<script src="js/main.js"></script>-->
+    </head>
+    <body>  
+              
+        <h1>Saisie d'une fiche "Personne"</h1>
+        <!-- Add your site or application content here -->
+        <div style="background-color: #e9ebee"  > 
+        <form id="Formulaire" method=get   onsubmit="validation();return false;">
+        <p>
+        <label for="nom" style="padding: 10px;padding-top: 10px;"> Nom </label>
+        <input id="nom" type="text" name="nom" maxlength="20" required="required" minlength="5" style="width:300px; height:20px;margin-left: 90px;margin-top: 10px;"  >
+        
+    </p>
+        <p>
+        <label for="prenom" style="padding: 10px;"> Prenom </label>
+        <input id="prenom" type="text" name="prenom" maxlength="20" required="required" minlength="5" style="width:300px; height:20px; margin-left: 70px;" >
+    </p>
+    <p>
+        <label for="nom" style="padding: 10px;" > Date de naissance  </label>
+        <input id="date" type="date" name="date" placeholder="JJ/MM/AAAA" style="width:297px; height:20px" required>
+    </p>
+    <p>
+        <label for="adresse" style="padding: 10px;" > Adresse </label>
+        <input id="adresse" type="text" name="adresse" maxlength="20"  minlength="5" style="width:300px; height:20px;margin-left: 70px;" required>
+    </p>
+    <p>
+        <label for="mail" style="padding: 10px;" > Mail </label>
+        <input id="mail" type="email" name="mail" maxlength="20" minlength="5"  style="width:300px; height:20px;margin-left: 95px;"required >
+    </p>
+    
+    <p class="boutton" >
+        
+        <input type="button" id="boutton" value="Valider" style="margin-left:200px; margin-block-end: 5px" onclick="validation()">
+    
+        <input type="reset" value="Reset" style="margin-left:50px; margin-block-end: 5px">
+    <input type="submit" value="Submit" style="margin-left:50px">
+    </p>
+    
+    </form>
+</div>
+    
+    <div id="error" hidden>  </div> 
+    <div id="resultat" hidden>  </div>
+    </body>
+    
+</html>
