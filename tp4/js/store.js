@@ -45,7 +45,7 @@ var contactStore = (function () {
         localStorage.setItem("adresse", inputAdresse.value);
         localStorage.setItem("mail", inputEmail.value);
 
-       $('#success').addClass("alert alert-success").text("félicitation!!! votre formulaire est sauvegardé.");
+       $('#success').addClass("alert alert-success").text("félicitation!! votre formulaire est sauvegardé.");
 
       $("#table").show();
       $("#liste_des_contacts").show()
